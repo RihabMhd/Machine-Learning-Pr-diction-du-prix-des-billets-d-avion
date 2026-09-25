@@ -3,7 +3,12 @@ import pandas as pd
 import joblib
 from pathlib import Path
 
+from huggingface_hub import hf_hub_download
 
+MODEL_PATH = hf_hub_download(
+    repo_id="rihabmhd/flight-price-model",
+    filename="flight_price_model.joblib"
+)
 
 #configuration
 
