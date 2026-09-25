@@ -1,0 +1,97 @@
+{
+    "model": "RandomForestRegressor",
+    "target": "price",
+    "features": [
+        "Unnamed: 0",
+        "airline",
+        "source_city",
+        "departure_time",
+        "stops",
+        "arrival_time",
+        "destination_city",
+        "class",
+        "duration",
+        "days_left"
+    ],
+    "continuous_variables": [
+        "duration",
+        "days_left"
+    ],
+    "discrete_variables": [
+        "airline",
+        "source_city",
+        "departure_time",
+        "stops",
+        "arrival_time",
+        "destination_city",
+        "class"
+    ],
+    "categories": {
+        "airline": [
+            "AirAsia",
+            "Air_India",
+            "GO_FIRST",
+            "Indigo",
+            "SpiceJet",
+            "Vistara"
+        ],
+        "source_city": [
+            "Bangalore",
+            "Chennai",
+            "Delhi",
+            "Hyderabad",
+            "Kolkata",
+            "Mumbai"
+        ],
+        "departure_time": [
+            "Afternoon",
+            "Early_Morning",
+            "Evening",
+            "Late_Night",
+            "Morning",
+            "Night"
+        ],
+        "stops": [
+            "one",
+            "two_or_more",
+            "zero"
+        ],
+        "arrival_time": [
+            "Afternoon",
+            "Early_Morning",
+            "Evening",
+            "Late_Night",
+            "Morning",
+            "Night"
+        ],
+        "destination_city": [
+            "Bangalore",
+            "Chennai",
+            "Delhi",
+            "Hyderabad",
+            "Kolkata",
+            "Mumbai"
+        ],
+        "class": [
+            "Business",
+            "Economy"
+        ]
+    },
+    "ranges": {
+        "duration": [
+            0.83,
+            49.83
+        ],
+        "days_left": [
+            1.0,
+            49.0
+        ]
+    },
+    "train_size": 240122,
+    "test_size": 60031,
+    "metrics": {
+        "MAE": 1077.8289017370787,
+        "RMSE": 2787.656498034734,
+        "R2": 0.984924741063871
+    }
+}
